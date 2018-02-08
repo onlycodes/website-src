@@ -1,0 +1,334 @@
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. 标题</a></li>
+<li><a href="#sec-2">2. 段落</a></li>
+<li><a href="#sec-3">3. 列表</a>
+<ul>
+<li><a href="#sec-3-1">3.1. 有序列表</a></li>
+<li><a href="#sec-3-2">3.2. 无序列表</a></li>
+<li><a href="#sec-3-3">3.3. 描述列表</a></li>
+</ul>
+</li>
+<li><a href="#sec-4">4. 超链接</a></li>
+<li><a href="#sec-5">5. 表格</a></li>
+<li><a href="#sec-6">6. 文本样式</a>
+<ul>
+<li><a href="#sec-6-1">6.1. 加粗</a></li>
+<li><a href="#sec-6-2">6.2. 斜体</a></li>
+<li><a href="#sec-6-3">6.3. 删除线</a></li>
+<li><a href="#sec-6-4">6.4. 下划线</a></li>
+<li><a href="#sec-6-5">6.5. 等宽字</a></li>
+<li><a href="#sec-6-6">6.6. 下标</a></li>
+<li><a href="#sec-6-7">6.7. 上标</a></li>
+</ul>
+</li>
+<li><a href="#sec-7">7. 源代码块</a></li>
+<li><a href="#sec-8">8. 待办事项</a></li>
+<li><a href="#sec-9">9. 标签</a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> 标题</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+标题的标记为: 一至多个 '*'
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-org">* 一级标题
+** 二级标题
+*** 三级标题
+**** 四级标题
+***** 五级标题
+****** 六级标题
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> 段落</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+起始直接书写内容即为段落, 段落之间以空行分隔
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> 列表</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+列表包括: 有序列表, 无序列表, 描述列表; 同一级的列表缩进必须相同, 不同级的列表以不同缩进区分
+</p>
+</div>
+
+<div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> 有序列表</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+有序列表的标记为: '1.', '1)'
+</p>
+<div class="org-src-container">
+
+<pre class="src src-org">1. 有序列表一
+
+1) 有序列表二
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> 无序列表</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+无序列表的标记为: '-', '+', '*'(使用 '*' 做列表项的标记时, 这一行必须缩进, 最好不使用 '*')
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-org">- 无序列表一
+
++ 无序列表二
+
+* 无序列表三
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3"><span class="section-number-3">3.3</span> 描述列表</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+描述列表的标记为: '::'
+</p>
+
+<pre class="example">
+  列表项 :: 列表描述
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> 超链接</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+类似于HTML, 可以添加文件内部的链接和文件外部的链接
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-org">[[link][description]]
+
+[[link]]
+
+[[#my-custom-id]]
+</pre>
+</div>
+
+<p>
+常用链接格式
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left"><a href="http://orgmode.org/org.html">http://orgmode.org/org.html</a></td>
+<td class="left">on the web</td>
+</tr>
+
+<tr>
+<td class="left"><a href="file://d:/home/notes/note.html">file://d:/home/notes/note.html</a></td>
+<td class="left">file, absolute path</td>
+</tr>
+
+<tr>
+<td class="left">/home/notes/note.org</td>
+<td class="left">same as above</td>
+</tr>
+
+<tr>
+<td class="left">./notes/note.org</td>
+<td class="left">same as above</td>
+</tr>
+
+<tr>
+<td class="left"><a href="mailto:myemail@example.com">mailto:myemail@example.com</a></td>
+<td class="left">mail link</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> 表格</h2>
+<div class="outline-text-2" id="text-5">
+<div class="org-src-container">
+
+<pre class="src src-org">| Name  | Phone | Age |
+|-------+-------+-----|
+| name1 | 123   | 1   |
+| name2 | 789   | 2   |
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> 文本样式</h2>
+<div class="outline-text-2" id="text-6">
+</div><div id="outline-container-sec-6-1" class="outline-3">
+<h3 id="sec-6-1"><span class="section-number-3">6.1</span> 加粗</h3>
+<div class="outline-text-3" id="text-6-1">
+<div class="org-src-container">
+
+<pre class="src src-org">*加粗文本*
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6-2" class="outline-3">
+<h3 id="sec-6-2"><span class="section-number-3">6.2</span> 斜体</h3>
+<div class="outline-text-3" id="text-6-2">
+<div class="org-src-container">
+
+<pre class="src src-org">/斜体/
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6-3" class="outline-3">
+<h3 id="sec-6-3"><span class="section-number-3">6.3</span> 删除线</h3>
+<div class="outline-text-3" id="text-6-3">
+<div class="org-src-container">
+
+<pre class="src src-org">+删除线+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6-4" class="outline-3">
+<h3 id="sec-6-4"><span class="section-number-3">6.4</span> 下划线</h3>
+<div class="outline-text-3" id="text-6-4">
+<div class="org-src-container">
+
+<pre class="src src-org">_下划线_
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6-5" class="outline-3">
+<h3 id="sec-6-5"><span class="section-number-3">6.5</span> 等宽字</h3>
+<div class="outline-text-3" id="text-6-5">
+<div class="org-src-container">
+
+<pre class="src src-org">=org=
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6-6" class="outline-3">
+<h3 id="sec-6-6"><span class="section-number-3">6.6</span> 下标</h3>
+<div class="outline-text-3" id="text-6-6">
+<div class="org-src-container">
+
+<pre class="src src-org">H_2 O
+(下标和普通字符之间以一个空格分隔)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6-7" class="outline-3">
+<h3 id="sec-6-7"><span class="section-number-3">6.7</span> 上标</h3>
+<div class="outline-text-3" id="text-6-7">
+<div class="org-src-container">
+
+<pre class="src src-org">πr^2
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> 源代码块</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+当源代码块中以 '*', ',*', '#+', ',#+' 开始, 
+在这些符号之前插入 ',' , 防止导出时解释为org的语法;
+(代码内容最好在开始处添加两个或四个空格缩进)
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-org">#+NAME: &lt;name&gt;
+#+BEGIN_SRC &lt;language&gt; &lt;switches&gt; &lt;header arguments&gt;
+  &lt;code body&gt;
+#+END_SRC
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8"><span class="section-number-2">8</span> 待办事项</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+在标题的标记后面加上 'TODO', 即变成待办事项; 
+待办事项默认只有两种状态: 'TODO' 和 'DONE';
+</p>
+<div class="org-src-container">
+
+<pre class="src src-org">** TODO 待办事项一
+</pre>
+</div>
+<p>
+通过设置TODO关键字标示事项处于工作流程中的不同状态, 
+设置里的竖线'|'划分未完结状态和以完结状态
+</p>
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp">(setq org-todo-keywords
+  '((sequence "TODO" "FEEDBACK" "VERIFY" "|" "DONE" "DELEGATED")))
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9"><span class="section-number-2">9</span> 标签</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+每个标题可以包含多个标签; 标签放在标题的末尾位置;
+标签的前后必须被冒号包括, 比如 ':notes:'
+</p>
+<div class="org-src-container">
+
+<pre class="src src-org">* 标题一    :标签一:标签二:
+** 标题二   :tag1:tag2:
+</pre>
+</div>
+</div>
+</div>

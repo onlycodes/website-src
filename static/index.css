@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('./fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto/Roboto-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('./fonts/Roboto_Mono/RobotoMono-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 20px;
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-size: .7rem;
+  font-family: Helvetica, "Roboto Mono", "Source Sans Pro", "Microsoft YaHei", sans-serif;
+  height: 100%;
+  width: 100%;
+  color: #24292E;
+}
+ul, ol, li {
+  list-style: none;
+}
+table, th, tr, td, tbody, thead, tfoot {
+  border-collapse: collapse;
+  border: 1px solid #C6CBD1;
+}
+td, th {
+  padding: .2rem .4rem;
+}
+tbody tr:nth-of-type(even) {
+  background-color: #F6F8FA;
+}
+
+h1 {
+  padding-top: 1.3rem;
+  padding-bottom: .9rem;
+}
+h2 {
+  padding-top: 1.1rem;
+  padding-bottom: .7rem;
+}
+h3 {
+  padding-top: .9rem;
+  padding-bottom: .5rem;
+}
+h4 {
+  padding-top: .7rem;
+  padding-bottom: .3rem;
+}

@@ -1,0 +1,36 @@
+{
+  "menus": [
+    {
+      "title": "编辑器",
+      "subMenus": [
+        {
+          "name": "Emacs 常用快捷键",
+          "path": "/editor/emacs-keyboard-shortcuts.html"
+        }
+      ]
+    },
+    {
+      "title": "纯文本文档语言",
+      "subMenus": [
+        {
+          "name": "Org Mode 语法",
+          "path": "/plain-text/org-mode-syntax.html"
+        },
+        {
+          "name": "Markdown 语法",
+          "path": "/plain-text/markdown-syntax.html"
+        }
+      ]
+    },
+    {
+      "title": "链接",
+      "subMenus": [
+        {
+          "name": "网址链接",
+          "path": "/link/index.html"
+        }
+      ]
+    }
+  ]
+}
+
